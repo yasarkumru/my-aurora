@@ -2,3 +2,8 @@ cosign.key
 _build_*
 output
 _build-*/**
+/cosign-linux-amd64
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/my-aurora.iml
+/.idea/vcs.xml
