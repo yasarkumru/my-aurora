@@ -1,5 +1,8 @@
 [customizations.installer.kickstart]
 contents = """
+# Define the user directly in the kickstart script
+user --name=yasar --groups=wheel --password=$6$cusUF3OG2QHeBY2O$5m6SVAMzn7MFcoEEJ/0e7Jk7VeICVvrwUIVSNYBGgq.hC09HUESjyrzV6NaYaGxI8WgGSK4L1naQxwzKcaWzB0 --iscrypted
+
 %post
 bootc switch --mutate-in-place --transport registry ghcr.io/ublue-os/my-aurora:latest
 %end
@@ -20,7 +23,4 @@ disable = [
   "org.fedoraproject.Anaconda.Modules.Subscription",
 ]
 
-[[customizations.user]]
-name = "yasar"
-password = "$6$cusUF3OG2QHeBY2O$5m6SVAMzn7MFcoEEJ/0e7Jk7VeICVvrwUIVSNYBGgq.hC09HUESjyrzV6NaYaGxI8WgGSK4L1naQxwzKcaWzB0"
-groups = ["wheel"]
+# IMPORTANT: Remove the [[customizations.user]] section entirely from the bottom of the file!
