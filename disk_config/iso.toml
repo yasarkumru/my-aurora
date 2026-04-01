@@ -19,3 +19,11 @@ enable = [
 disable = [
   "org.fedoraproject.Anaconda.Modules.Subscription",
 ]
+
+[disk]
+# Choose 'btrfs' (standard for Fedora/uBlue) or 'xfs'
+type = "btrfs"
+
+# Or if your template uses the rootfs section specifically:
+[rootfs]
+type = "btrfs"
