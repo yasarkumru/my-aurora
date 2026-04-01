@@ -19,3 +19,8 @@ enable = [
 disable = [
   "org.fedoraproject.Anaconda.Modules.Subscription",
 ]
+
+[[customizations.user]]
+name = "yasar"
+password = "$6$cusUF3OG2QHeBY2O$5m6SVAMzn7MFcoEEJ/0e7Jk7VeICVvrwUIVSNYBGgq.hC09HUESjyrzV6NaYaGxI8WgGSK4L1naQxwzKcaWzB0"
+groups = ["wheel"]
