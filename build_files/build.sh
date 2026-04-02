@@ -19,7 +19,7 @@ dnf5 install -y \
 
 
 rpm-ostree override remove \
-    sunshine
+    Sunshine
 
 # Use a COPR Example:
 #
