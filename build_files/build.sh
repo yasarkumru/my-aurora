@@ -17,8 +17,6 @@ dnf5 install -y \
 rpm-ostree override remove \
     Sunshine
 
-
-cp /ctx/hello.txt /
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging

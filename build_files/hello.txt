@@ -1,1 +1,0 @@
-This is just a text file to test if i can write in to the root folder
